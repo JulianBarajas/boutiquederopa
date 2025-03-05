@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boutique</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="logo">LORRAINE</h1>
+      <div id="menu" class="menu-hamburguesa">
+        <i class="fas fa-bars"></i>
+      </div>
+      <nav class="nav" id="nav">
+        <div id="cerrar" class="cerrar">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#testimonios">Testimonios</a></li>
+          <li><a href="#ubicacion">Nuestar Tienda</a></li>
+          <li><a href="#contacto">Contáctanos</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="banner">
+      <div class="banner-text">
+        <h1>Descubre Nuestros Productos</h1>
+        <p>
+          Encuentra lo último en moda con descuentos exclusivos. ¡No te lo
+          pierdas!
+        </p>
+        <a href="#productos" class="btn" aria-label="Ir a Productos"
+          >Ver Productos</a
+        >
+      </div>
+      <div class="banner-video">
+        <video autoplay loop muted>
+          <source src="video/boutique.mp4" type="video/mp4" />
+          Tu navegador no soporta videos.
+        </video>
+      </div>
+    </div>
+    <div class="barra-superior">
+      <div class="categorias">
+        <button class="categoria" data-categoria="todas">Todas</button>
+        <button class="categoria" data-categoria="blusas">Blusas</button>
+        <button class="categoria" data-categoria="camisetas">Camisetas</button>
+        <button class="categoria" data-categoria="looks">Looks</button>
+        <button class="categoria" data-categoria="vestidos">Vestidos</button>
+        <button class="categoria" data-categoria="conjuntos">Conjuntos</button>
+        <button class="categoria" data-categoria="enterizos">Enterizos</button>
+      </div>
+      <div class="buscador">
+        <input type="text" id="buscador" placeholder="Buscar productos..." />
+        <button id="btnBuscar"><i class="fas fa-search"></i></button>
+      </div>
+    </div>
+    <main id="productos" class="productos">
+      <div
+        class="producto"
+        data-category="blusas"
+        data-images="img/BlusaCorset.jpg,img/BlusaCorset_view2.jpg,img/BlusaCorset_view3.jpg"
+      >
+        <a href="producto.html">
+          <img src="img/BlusaCorset.jpg" alt="Blusa Corset" />
+        </a>
+        <h2>Blusa Corset</h2>
+        <p>$25.000</p>
+      </div>
+      <div
+        class="producto"
+        data-category="conjuntos"
+        data-images="img/Conjunto elegante.jpg,img/ConjuntoElegante_view2.jpg"
+      >
+        <a href="producto.html">
+          <img
+            src="img/Conjunto elegante.jpg"
+            alt="Conjunto elegante anaranjado"
+          />
+        </a>
+        <h2>Conjunto anaranjado</h2>
+        <p>$25.000</p>
+      </div>
+      <div
+        class="producto"
+        data-category="vestidos"
+        data-images="img/VestidoIdealParaNavidad.jpg,img/VestidoIdealParaNavidad_2.jpg "
+      >
+        <a href="producto.html">
+          <img src="img/VestidoIdealParaNavidad.jpg" alt="Vestido largo Rojo" />
+        </a>
+        <h2>Vestido elegante</h2>
+        <p>Vestido especial para Fechas especiales</p>
+        <p>$40.00</p>
+      </div>
+      <div
+        class="producto"
+        data-category="vestidos"
+        data-images="img/Vestido corto.jpg,img/Vestido corto_view2.jpg"
+      >
+        <a href="producto.html">
+          <img src="img/Vestido corto.jpg" alt="Vestido Corto" />
+        </a>
+        <h2>Vestido Corto</h2>
+        <p>Vestido corto, fresco y tierno</p>
+        <p>$30.00</p>
+      </div>
+      <div
+        class="producto"
+        data-category="conjuntos"
+        data-images="img/ConjuntoIdeal.jpg,img/ConjuntoIdeal_view2.jpg,img/ConjuntoIdeal_view3.jpg"
+      >
+        <a href="producto.html">
+          <img src="img/ConjuntoIdeal.jpg" alt="Producto 5" />
+        </a>
+        <h2>Conjunto Morado</h2>
+        <p>$50.000</p>
+      </div>
+      <div
+        class="producto"
+        data-category="enterizos"
+        data-images="img/Enterizo.jpg,img/Enterizo_view2.jpg,img/Enterizo_view3.jpg"
+      >
+        <a href="producto.html">
+          <img src="img/Enterizo.jpg" alt="Enterizo" />
+        </a>
+        <h2>Enterizo</h2>
+        <p>$60.000</p>
+      </div>
+      <div
+        class="producto"
+        data-category="camisetas"
+        data-images="img/Camisetas.jpg,img/Camisetas_view2.jpg,img/Camisetas_view3.jpg"
+      >
+        <a href="producto.html">
+          <img src="img/Camisetas.jpg" alt="Camisetas con estampados únicos" />
+        </a>
+        <h2>Camisetas</h2>
+        <p>$50.00</p>
+      </div>
+      <div
+        class="producto"
+        data-category="conjuntos"
+        data-images="img/Conjuntoverde.jpg,img/Conjuntoverde_view2.jpg"
+      >
+        <a href="producto.html">
+          <img src="img/Conjuntoverde.jpg" alt="Producto 8" />
+        </a>
+        <h2>Conjunto verde</h2>
+        <p>$50.00</p>
+      </div>
+      <div
+        class="producto"
+        data-category="blusas"
+        data-images="img/Blusas_Tendencia.jpg,img/Blusas_Tendencia_view2.jpg"
+      >
+        <a href="producto.html">
+          <img src="img/Blusas_Tendencia.jpg" alt="Blusa Tendencia" />
+        </a>
+        <h2>Blusa Tendencia</h2>
+        <p>$75.000</p>
+      </div>
+      <div
+        class="producto"
+        data-category="conjuntos"
+        data-images="img/ConjuntoBlanco.jpg,img/ConjuntoBlanco_view2.jpg"
+      >
+        <a href="producto.html">
+          <img src="img/ConjuntoBlanco.jpg" alt="Conjunto elegante blanco" />
+        </a>
+        <h2>Conjunto Elegante Blanco</h2>
+        <p>$25.000</p>
+      </div>
+      <div
+        class="producto"
+        data-category="conjuntos"
+        data-images="img/ConjuntoFresh.jpg,img/ConjuntoFresh_view2.jpg"
+      >
+        <a href="producto.html">
+          <img
+            src="img/ConjuntoFresh.jpg"
+            alt="Conjunto Fresh"
+            loading="lazy"
+          />
+        </a>
+        <h2>Conjunto Fresh</h2>
+        <p>$40.000</p>
+      </div>
+      <div
+        class="producto"
+        data-category="vestidos"
+        data-images="img/VestidoCortos_Azul.jpg,img/VestidoCortos_Azul_view2.jpg"
+      >
+        <a href="producto.html">
+          <img src="img/VestidosCortos_Azul.jpg" alt="Vestido corto azul" />
+        </a>
+        <h2>Vestido Corto Azul</h2>
+        <p>$130.000</p>
+      </div>
+      <div
+        class="producto"
+        data-category="vestidos"
+        data-images="img/VestidoCortos_Rojo.jpg,img/VestidoCortos_Rojo_view2.jpg"
+      >
+        <a href="producto.html">
+          <img src="img/VestidosCortos_Rojo.jpg" alt="Vestido corto rojo" />
+        </a>
+        <h2>Vestido Corto Rojo</h2>
+        <p>$130.000</p>
+      </div>
+      <div
+        class="producto"
+        data-category="looks"
+        data-images="img/LookElegante.jpg,img/LookElegante_view2.jpg,img/LookElegante_view3.jpg"
+      >
+        <a href="producto.html">
+          <img src="img/LookElegante.jpg" alt="Look Elegante Azul" />
+        </a>
+        <h2>Look Elegante Azul</h2>
+        <p>$89.000</p>
+      </div>
+      <div
+        class="producto"
+        data-category="enterizos"
+        data-images="img/EnterizoRosado.jpg,img/EnterizoRosado_view2.jpg"
+      >
+        <a href="producto.html">
+          <img src="img/EnterizoRosado.jpg" alt="Enterizo Rosado" />
+        </a>
+        <h2>Enterizo Rosado</h2>
+        <p>$150.000</p>
+      </div>
+      <div
+        class="producto"
+        data-category="looks"
+        data-images="img/LookUrbano.jpg,img/LookUrbano_view2.jpg"
+      >
+        <a href="producto.html">
+          <img src="img/LookUrbano.jpg" alt="Look Urbano" />
+        </a>
+        <h2>Look Urbano</h2>
+        <p>$50.00</p>
+      </div>
+    </main>
+    <div class="product-container">
+      <div class="product-list"></div>
+    </div>
+    <div class="paginacion">
+      <button id="prevPage"><i class="fas fa-chevron-left"></i></button>
+      <span id="pageIndicator">Página 1</span>
+      <button id="nextPage"><i class="fas fa-chevron-right"></i></button>
+    </div>
+    <section class="benefits">
+      <div class="benefit">
+        <i class="fa-solid fa-star"></i>
+        <h3>ALTA CALIDAD</h3>
+        <p>Manejamos materiales nacionales de la mejor calidad.</p>
+      </div>
+      <div class="benefit">
+        <i class="fa-solid fa-lock"></i>
+        <h3>PAGO SEGURO</h3>
+        <p>
+          Recibimos todas las tarjetas de Crédito y Débito, PSE, Davivienda y
+          Bancolombia.
+        </p>
+      </div>
+      <div class="benefit">
+        <i class="fa-solid fa-tshirt"></i>
+        <h3>VARIEDAD EN PRENDAS</h3>
+        <p>
+          Contamos con todo tipo de prendas y diseños ideales para cada gusto y
+          estilo.
+        </p>
+      </div>
+    </section>
+    <!-- SECCIÓN DE TESTIMONIOS -->
+    <section id="testimonios" class="testimonios">
+      <h2>Testimonios</h2>
+      <div class="testimonios-container">
+        <div class="testimonio">
+          <img src="cliente1.jpg" alt="Cliente 1" />
+          <p>"Excelente servicio y calidad. ¡Recomendado!"</p>
+          <h4>- Juan Pérez</h4>
+        </div>
+        <div class="testimonio">
+          <img src="cliente2.jpg" alt="Cliente 2" />
+          <p>"Los productos son increíbles, muy buena experiencia."</p>
+          <h4>- María Gómez</h4>
+        </div>
+        <div class="testimonio">
+          <img src="cliente1.jpg" alt="Cliente 1" />
+          <p>"Excelente servicio y calidad. ¡Recomendado!"</p>
+          <h4>- Julian Garzón</h4>
+        </div>
+        <div class="testimonio">
+          <img src="cliente2.jpg" alt="Cliente 2" />
+          <p>"Los productos son increíbles, muy buena experiencia."</p>
+          <h4>- Lucas Gou</h4>
+        </div>
+      </div>
+    </section>
+    <section id="ubicacion" class="ubicacion">
+      <h2>¿Dónde Estamos?</h2>
+
+      <div class="ubicacion-content">
+        <!-- Video de la tienda -->
+        <div class="ubicacion-video">
+          <video autoplay loop muted>
+            <source src="video/Tienda.mp4" type="video/mp4" />
+            Tu navegador no soporta videos.
+          </video>
+        </div>
+        <div class="ubicacion-info">
+          <h3>Visítanos en Barrancabermeja</h3>
+          <p>Barrancabermeja • Cll 49 #21-80, B. Colombia</p>
+          <p>
+            <strong>¡Acércate y conoce nuestra tienda!</strong><br />
+            Aprovecha muchos descuentos y disfruta de una experiencia de compra
+            única.
+          </p>
+          <a
+            href="https://maps.app.goo.gl/ZFNgSsFyxkK5fBBv6"
+            target="_blank"
+            class="btn-maps"
+          >
+            Como llegar
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="contacto">
+      <h2>Contáctenos</h2>
+      <form>
+        <input type="text" placeholder="Nombre" required />
+        <input type="email" placeholder="Correo Electrónico" required />
+        <textarea placeholder="Mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-container">
+        <p>&copy; 2025 Boutique. Todos los derechos reservados.</p>
+        <div class="redes">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </footer>
+    <a
+      href="https://api.whatsapp.com/send?phone=+573187934623&text=¡Hola!%20Quiero%20más%20información..."
+      class="whatsapp-float"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <button id="btnTop" class="btn-top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    <script defer src="script.js"></script>
+  </body>
+</html>

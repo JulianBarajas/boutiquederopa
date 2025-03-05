@@ -1,0 +1,806 @@
+/* Estilos Generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Barra de Navegación */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #e91e63; /* Rosa fuerte */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.menu-hamburguesa,
+.cerrar {
+  display: none;
+}
+
+.nav-links {
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+}
+
+.nav-links li a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+/* Estilos del Banner */
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70vh;
+  padding: 40px;
+  background-color: #ffe6f2; /* Rosado sutil */
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* Texto a la izquierda */
+.banner-text {
+  width: 50%;
+  color: #6a1b9a; /* Púrpura oscuro para contraste */
+  font-family: "Poppins", sans-serif;
+  padding: 20px;
+  text-align: left;
+}
+
+.banner-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.banner-text p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Botón estilizado */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #e91e63; /* Rosa vibrante */
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 50px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #c2185b;
+  box-shadow: 2px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Barra superior */
+.barra-superior {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Categorías */
+.categorias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.categoria {
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.categoria:hover {
+  background-color: #c2185b;
+}
+
+/* .categoria.active {
+  background-color: #ff6600;
+  color: white;
+} */
+
+/* Buscador */
+.buscador {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.buscador input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+.buscador button {
+  background: #e91e63;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buscador button:hover {
+  background: #c2185b;
+}
+
+/* Contenedor de productos */
+.productos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+  grid-template-rows: repeat(2, auto); /* 2 filas */
+  gap: 20px; /* Espacio entre productos */
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Productos individuales */
+.producto {
+  background: white;
+  padding: 15px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.producto:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+.producto img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Paginación */
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+}
+
+.paginacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  gap: 10px;
+}
+
+.paginacion button {
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 18px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.paginacion button:hover {
+  background-color: #c2185b;
+}
+
+.paginacion i {
+  font-size: 18px;
+}
+
+/* Video */
+.banner-video {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-video video {
+  width: 100%;
+  max-width: 400px;
+  height: 400px;
+  object-fit: contain; /* Recorta los bordes sin deformar */
+  border-radius: 15px;
+  box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.3);
+  background-color: #fdddee;
+  border: 2px solid #e68bb5;
+}
+
+/* ESTILOS PARA TESTIMONIOS */
+.testimonios {
+  text-align: center;
+  padding: 40px;
+}
+.testimonios-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.testimonio {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: center;
+}
+.testimonio img {
+  width: 60px;
+  border-radius: 50%;
+}
+
+/* Sección Ubicación */
+.ubicacion {
+  padding: 2rem;
+  background-color: #f9f9f9; /* color suave de fondo */
+  text-align: center;
+}
+
+.ubicacion h2 {
+  color: #e91e63;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Contenedor principal de video + info */
+.ubicacion-content {
+  display: flex;
+  align-items: flex-start; /* Alinea verticalmente al tope */
+  justify-content: center; /* Centra horizontalmente */
+  gap: 1rem; /* Espacio entre columnas */
+  margin-top: 2rem;
+}
+
+/* Video a la izquierda */
+.ubicacion-video {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ubicacion-video video {
+  width: 100%;
+  max-width: 500px;
+  height: 400px;
+  object-fit: contain;
+  border-radius: 15px;
+  box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.3);
+  background-color: #f9f9f9;
+}
+
+/* Información a la derecha */
+.ubicacion-info {
+  flex: 1;
+  text-align: left; /* Alinea el texto a la izquierda */
+  max-width: 500px; /* Ajusta según tu diseño */
+  margin: 0 auto;
+}
+
+.ubicacion-info h3 {
+  color: #e91e63;
+  margin-bottom: 1rem;
+}
+
+.ubicacion-info p {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.btn-maps {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #e91e63; /* Rosa vibrante */
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 50px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.btn-maps:hover {
+  background-color: #c2185b;
+  box-shadow: 2px 6px 15px rgba(0, 0, 0, 0.3);
+}
+/* ESTILOS PARA CONTACTO */
+.contacto {
+  text-align: center;
+  padding: 40px;
+  background-color: #ffe6f2;
+}
+.contacto form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+}
+.contacto input,
+.contacto textarea {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.contacto button {
+  background: #ff4081;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  font-size: 30px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  background-color: #20b955;
+  transform: scale(1.1);
+}
+
+.btn-top {
+  position: fixed;
+  bottom: 85px;
+  right: 25px;
+  width: 40px;
+  height: 40px;
+  background-color: #e91e63;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+  display: none; /* Oculto por defecto */
+  justify-content: center;
+  align-items: center;
+  z-index: 1001;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.btn-top:hover {
+  background-color: #d81b60;
+}
+
+.benefits {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #ffe6f2;
+  gap: 20px;
+}
+
+.benefit {
+  flex: 1;
+  max-width: 300px;
+}
+
+.benefit i {
+  font-size: 2rem;
+  color: #e91e63;
+  margin-bottom: 10px;
+}
+
+.benefit h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #e91e63;
+}
+
+.benefit p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Sección del Producto */
+.product-detail {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+}
+
+.product-images {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid #ddd;
+  margin-bottom: 1rem;
+}
+
+#gallery {
+  display: flex;
+  gap: 0.5rem;
+}
+
+#gallery img {
+  width: 60px;
+  height: auto;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  transition: transform 0.2s;
+}
+
+.thumbnail {
+  width: 60px;
+  height: auto;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  transition: transform 0.2s;
+}
+
+.thumbnail:hover {
+  transform: scale(1.05);
+}
+
+#gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Info del producto */
+.product-info {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.product-info h2 {
+  font-size: 1.8rem;
+  color: #e91e63;
+}
+
+.product-info p {
+  margin: 0.25rem 0;
+  font-size: 1rem;
+}
+
+.product-options {
+  margin: 1rem 0;
+}
+
+.product-options select {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.size-options {
+  display: flex;
+  gap: 0.5rem;
+  margin: 1rem 0; /* Ajusta según tu diseño */
+}
+
+.size-button {
+  display: inline-block;
+}
+
+.size-button input {
+  display: none; /* Ocultamos el radio */
+}
+
+/* El <span> actuará como el botón visible */
+.size-button span {
+  display: inline-block;
+  border: 2px solid #e91e63; /* Color principal */
+  border-radius: 20px; /* Bordes redondeados tipo “píldora” */
+  color: #e91e63;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Cuando el radio esté checked, cambiamos el estilo del span */
+.size-button input:checked + span {
+  background-color: #e91e63; /* Fondo rosa */
+  color: #fff; /* Texto blanco */
+}
+
+.product-info button {
+  background-color: #e91e63;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.product-info button:hover {
+  background-color: #d81b60;
+}
+
+.pedido-mensajes {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+.pedido-mensajes .mensaje {
+  margin-bottom: 0.5rem;
+}
+
+/* Productos Relacionados */
+#productosReferencia {
+  padding: 1rem 2rem;
+  background-color: #f9f9f9;
+}
+
+#productosReferencia h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.referencia-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.producto-ref {
+  width: 150px;
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  transition: transform 0.2s;
+  background-color: #fff;
+}
+
+.producto-ref:hover {
+  transform: scale(1.05);
+}
+
+.producto-ref img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.producto-ref img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#politicas {
+  padding: 1rem 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* ESTILOS PARA FOOTER */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.redes a {
+  color: white;
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+/* Adaptación a Dispositivos Móviles */
+@media (max-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu-hamburguesa {
+    display: block;
+    cursor: pointer;
+    font-size: 26px;
+    color: #fff;
+  }
+
+  .cerrar {
+    display: block;
+    cursor: pointer;
+    font-size: 30px;
+    color: #e91e63;
+  }
+
+  .nav {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffe6f2;
+    padding: 20px;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+  }
+
+  .nav::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none; /* Evita que interfiera cuando el menú esté cerrado */
+  }
+
+  .nav.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: end;
+  }
+
+  .nav-links li a {
+    color: #e91e63;
+  }
+
+  .banner {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .banner-text,
+  .banner-video,
+  .ubicacion-video {
+    width: 100%;
+    text-align: center;
+  }
+
+  .banner-video video,
+  .ubicacion-video video {
+    width: 100%;
+    height: auto;
+  }
+  .barra-superior {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .categorias {
+    justify-content: center;
+    margin: 10px;
+  }
+
+  .productos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .buscador input {
+    width: 150px;
+  }
+  .benefits {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .benefit {
+    max-width: 100%;
+  }
+  .product-detail {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .ubicacion-content {
+    flex-direction: column; /* Apila video y texto */
+    align-items: center; /* Centra el contenido */
+  }
+
+  .ubicacion-video,
+  .ubicacion-info {
+    max-width: 90%;
+    text-align: center; /* Para centrar texto en móvil */
+  }
+
+  .ubicacion-info {
+    margin-top: 1rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .productos {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .categoria {
+    padding: 8px 10px;
+  }
+
+  .buscador input {
+    width: 120px;
+  }
+  .paginacion a {
+    padding: 8px 12px;
+  }
+}

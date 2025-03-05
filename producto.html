@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productos - Mi Boutique</title>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Barra de navegación -->
+    <header>
+      <h1 class="logo">LORRAINE</h1>
+      <div id="menu" class="menu-hamburguesa">
+        <i class="fas fa-bars"></i>
+      </div>
+      <nav class="nav" id="nav">
+        <div id="cerrar" class="cerrar">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="#testimonios">Testimonios</a></li>
+          <li><a href="#politicas">Políticas de Cambio</a></li>
+          <li><a href="#contacto">Contáctanos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Sección: Información del Producto Seleccionado -->
+    <section id="producto">
+      <div class="product-detail">
+        <div class="product-images">
+          <img
+            id="mainImage"
+            src=""
+            alt="Imagen del producto"
+            class="main-image"
+          />
+          <div id="gallery"></div>
+        </div>
+        <div class="product-info">
+          <h2 id="productName"></h2>
+          <p id="productPrice"></p>
+          <p id="productCategory"></p>
+          <div class="size-options">
+            <label class="size-button">
+              <input type="radio" name="size" value="S" checked />
+              <span>S</span>
+            </label>
+            <label class="size-button">
+              <input type="radio" name="size" value="M" />
+              <span>M</span>
+            </label>
+            <label class="size-button">
+              <input type="radio" name="size" value="L" />
+              <span>L</span>
+            </label>
+          </div>
+          <button id="solicitarPedido">Solicitar Pedido</button>
+          <div class="pedido-mensajes">
+            <p class="mensaje">
+              *Cuando vayas a envíar, tómale pantallazo al producto, así podemos
+              darte mejor información.
+            </p>
+            <p class="mensaje">
+              **Se te avisará después que envíes la solicitud, si está
+              disponible.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección: Productos Relacionados -->
+    <section id="productosReferencia">
+      <h3>Te puede interesar</h3>
+      <div class="referencia-contenedor" id="referenciaContenedor"></div>
+    </section>
+
+    <section class="benefits">
+      <div class="benefit">
+        <i class="fa-solid fa-star"></i>
+        <h3>ALTA CALIDAD</h3>
+        <p>Manejamos materiales nacionales de la mejor calidad.</p>
+      </div>
+      <div class="benefit">
+        <i class="fa-solid fa-lock"></i>
+        <h3>PAGO SEGURO</h3>
+        <p>
+          Recibimos todas las tarjetas de Crédito y Débito, PSE, Davivienda y
+          Bancolombia.
+        </p>
+      </div>
+      <div class="benefit">
+        <i class="fa-solid fa-tshirt"></i>
+        <h3>VARIEDAD EN PRENDAS</h3>
+        <p>
+          Contamos con todo tipo de prendas y diseños ideales para cada gusto y
+          estilo.
+        </p>
+      </div>
+    </section>
+    <!-- Sección: Testimonios -->
+    <section id="testimonios" class="testimonios">
+      <h2>Testimonios</h2>
+      <div class="testimonios-container">
+        <div class="testimonio">
+          <img src="cliente1.jpg" alt="Cliente 1" />
+          <p>"Excelente servicio y calidad. ¡Recomendado!"</p>
+          <h4>- Juan Pérez</h4>
+        </div>
+        <div class="testimonio">
+          <img src="cliente2.jpg" alt="Cliente 2" />
+          <p>"Los productos son increíbles, muy buena experiencia."</p>
+          <h4>- María Gómez</h4>
+        </div>
+        <div class="testimonio">
+          <img src="cliente1.jpg" alt="Cliente 1" />
+          <p>"Excelente servicio y calidad. ¡Recomendado!"</p>
+          <h4>- Juan Pérez</h4>
+        </div>
+        <div class="testimonio">
+          <img src="cliente2.jpg" alt="Cliente 2" />
+          <p>"Los productos son increíbles, muy buena experiencia."</p>
+          <h4>- María Gómez</h4>
+        </div>
+      </div>
+    </section>
+    <section id="politicas">
+      <h3>Políticas de cambio</h3>
+      <p>
+        Aquí se explican las políticas de cambio y devoluciones de la boutique.
+      </p>
+    </section>
+    <section id="contacto" class="contacto">
+      <h2>Contáctenos</h2>
+      <form>
+        <input type="text" placeholder="Nombre" required />
+        <input type="email" placeholder="Correo Electrónico" required />
+        <textarea placeholder="Mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+    <footer>
+      <div class="footer-container">
+        <p>&copy; 2025 Boutique. Todos los derechos reservados.</p>
+        <div class="redes">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </footer>
+    <script src="producto.js"></script>
+  </body>
+</html>
